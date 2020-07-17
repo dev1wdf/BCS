@@ -9,7 +9,7 @@
  */
 
 defined( 'ABSPATH' ) || exit;
-die();
+
 /**
  * Checkout class.
  */
@@ -60,6 +60,7 @@ class WC_Checkout {
 			// woocommerce_checkout_init action is ran once when the class is first constructed.
 			do_action( 'woocommerce_checkout_init', self::$instance );
 		}
+		die();
 		return self::$instance;
 	}
 
