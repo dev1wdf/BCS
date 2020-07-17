@@ -9,7 +9,7 @@
  */
 
 defined( 'ABSPATH' ) || exit;
-
+die();
 /**
  * Checkout class.
  */
