@@ -7,7 +7,7 @@
  * @package WooCommerce/Classes
  * @version 3.4.0
  */
-
+echo "helo man";
 defined( 'ABSPATH' ) || exit;
 
 /**
