@@ -7,7 +7,7 @@
  * @package WooCommerce/Classes
  * @version 3.4.0
  */
-echo "helo man";
+
 defined( 'ABSPATH' ) || exit;
 
 /**
@@ -53,7 +53,6 @@ class WC_Checkout {
 	public static function instance() {
 		if ( is_null( self::$instance ) ) {
 			self::$instance = new self();
-			self::$instance = null;
 			// Hook in actions once.
 			add_action( 'woocommerce_checkout_billing', array( self::$instance, 'checkout_form_billing' ) );
 			add_action( 'woocommerce_checkout_shipping', array( self::$instance, 'checkout_form_shipping' ) );
